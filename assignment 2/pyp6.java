@@ -1,0 +1,57 @@
+/*
+
+*
+
+*/
+import java.util.*; 
+class pyp6
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of rows to be printed");
+        int rows = sc.nextInt();
+		
+		int end = rows;
+        // loop to iterate for the given number of rows
+			
+			for(int i =1;i<=rows;i++){
+				for(int k=2;k<=i;k++){
+					System.out.print(" ");
+				}
+				for(int j=rows;j>i-1;j--){
+					System.out.print("*");
+				}
+				for(int l=rows;l>i;l-- ){
+					System.out.print("*");
+				}
+				System.out.println();
+				}
+					
+			}
+}
+ 
+
+
+
+/*
+
+
+
+*****************
+ ***************
+  *************
+   ***********
+    *********
+     *******
+      *****
+       ***
+        *
+
+
+
+
+
+
+
+*/

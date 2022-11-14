@@ -1,0 +1,27 @@
+class demo
+{
+    static int location(int[]arr,int size,int key,int count)
+    {
+        if(count == size)
+        {
+            return -1;
+
+        }
+        else {
+            if(arr[count]==key)
+            {
+                System.out.println("the location of the key is "+count);
+            }
+            else return location(arr,size,key,count+1);
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {9,8,10,8};
+        int key = 8;
+        int count =0;
+        int size = arr.length;
+       int loc = location(arr,size,key,count);
+    }
+}

@@ -1,0 +1,25 @@
+class Demo
+{
+
+    static int count(int number,int count)
+    {
+
+        if(number<=0)
+        {
+            return count;
+        }
+        else {
+            return count(number/10,count+1);
+
+        }
+
+
+    }
+
+    public static void main(String[] args) {
+
+        int number = 7;
+        int count = 0;
+        System.out.println(count(number,count));
+    }
+}

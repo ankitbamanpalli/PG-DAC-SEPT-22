@@ -1,0 +1,32 @@
+/*package whatever //do not write package name here */
+
+import java.io.*;
+
+class GFG {
+    public static void removeConsecutiveDuplicates(char[] input, int pos) {
+        String s = " ";
+
+        if (pos >= input.length) {
+           return;
+        } else {
+            if (input[pos] == 'x') {
+                input[pos] = ' ';
+            }
+
+            s += input[pos];
+            System.out.print(s);
+            removeConsecutiveDuplicates(input, pos + 1);
+        }
+
+
+    }
+
+    public static void main(String[] args) {
+        String S1 = "xx";
+        char[] str = new char[10];
+        str = S1.toCharArray();
+        int pos = 0;
+        removeConsecutiveDuplicates(str, pos);
+
+    }
+}

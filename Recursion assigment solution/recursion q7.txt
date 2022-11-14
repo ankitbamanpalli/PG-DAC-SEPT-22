@@ -1,0 +1,25 @@
+class Demo {
+
+    static void count(int[] arr, int count,int sum) {
+
+        if (count < 0)
+        {
+            System.out.println(sum);
+        }
+        else
+        {
+            sum += arr[count];
+            count(arr,count-1,sum);
+        }
+
+
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = {9,8,9};
+        int count = arr.length-1;
+        int sum =0;
+        count(arr,count,sum);
+    }
+}
